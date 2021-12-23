@@ -6,7 +6,7 @@ from zipfile import ZipFile
 HOME_DIR = Path(__file__).resolve().parent
 
 
-if __name__ == "__main__":
+def unzip():
     filename = None
 
     for _ in range(2021):
@@ -17,4 +17,8 @@ if __name__ == "__main__":
 
         with ZipFile(filename) as zip_file:
             zip_file.extractall(HOME_DIR)
+
+
+if __name__ == "__main__":
+    unzip()
         
