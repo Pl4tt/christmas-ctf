@@ -64,5 +64,5 @@ if __name__ == "__main__":
     target_file = os.path.join(HOME_DIR, "target_code.txt")
     
     code = convert_text(story_file, target_file)
-    append_char(f"{HOME_DIR}/target_code.txt", code+"\n")
+    append_char(target_file, code+"\n")
     
